@@ -1,0 +1,154 @@
+{
+	"name":"Faaber",
+	"thumbnail":"thumbnail.png",
+	"screenshot":"thumbnail.png",
+	"images":[
+        "images/image-1.jpg",
+        "images/image-2.jpg",
+        "images/image-3.jpg",
+        "images/image-4.jpg",
+        "images/image-5.jpg",
+        "images/image-6.jpg",
+        "images/image-7.jpg",
+        "images/image-8.jpg"
+    ],
+	"tags": {
+		"en": ["minimal", "clean", "photography", "modern", "website", "creative", "unique", "media", "sans-serif"]
+	},
+	"colorSwatches": {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#363636",
+            "color3":"#ffffff",
+            "color4":"#777777",
+            "color5":"#a9a9a9",
+            "color6":"#191919",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#4e1f1f",
+            "color3":"#ffffff",
+            "color4":"#ab4343",
+            "color5":"#cf8484",
+            "color6":"#240e0e",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#264744",
+            "color3":"#ffffff",
+            "color4":"#529c95",
+            "color5":"#8fc4bf",
+            "color6":"#122120",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#4b3d52",
+            "color3":"#ffffff",
+            "color4":"#897196",
+            "color5":"#b4a5bc",
+            "color6":"#2f2734",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#26384f",
+            "color3":"#ffffff",
+            "color4":"#4f75a6",
+            "color5":"#8da7c9",
+            "color6":"#141d29",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Lato",
+        "font1": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "34px",
+            "font-weight": "700",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "24px",
+            "font-weight": "300",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "15px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "color-hover": "lighten(@color-swatch6, 40%)",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch2"
+         },
+        "font7": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "color-hover": "@color-swatch6",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font8": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "32px",
+            "font-weight": "700",
+            "line-height": "42px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "20px",
+            "font-weight": "700",
+            "line-height": "30px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}
