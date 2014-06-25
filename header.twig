@@ -1,11 +1,13 @@
-<header class="template-header container">
-	<div class="row">
-		<div class="header-title span-3">
-			{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-			{{widget('companyname', 'companyname', {"business": "Specify"})|raw}}
+<div class="header-wrap">
+	<header class="template-header container">
+		<div class="row">
+			<div class="header-title span-3">
+				{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+				{{widget('companyname', 'companyname', {"business": "Specify"})|raw}}
+			</div>
+			<nav class="template-nav span-9">
+				{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+				{{widget('profile', 'footercolumn1profilesocialicons', { 'profileType' : 'socialicons' })|raw}}
 		</div>
-		<nav class="template-nav span-9">
-			{{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
-		</nav>
-	</div>
-</header>
+	</header>
+</div>

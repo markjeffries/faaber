@@ -12,13 +12,17 @@
         "images/image-7.jpg",
         "images/image-8.jpg"
     ],
+    "pageTypes":[
+    	"home",
+    	"default"
+    ],
 	"tags": {
 		"en": ["minimal", "clean", "photography", "modern", "website", "creative", "unique", "media", "sans-serif"]
 	},
 	"colorSwatches": {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#363636",
+            "color2":"#002b4f",
             "color3":"#ffffff",
             "color4":"#777777",
             "color5":"#a9a9a9",
@@ -147,7 +151,7 @@
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "30px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch2",
             "letter-spacing": "inherit"
         }
     }

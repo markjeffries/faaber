@@ -446,6 +446,10 @@ input[type="search"]::-webkit-search-decoration {
 	}
 }
 
+.header-wrap {
+	border-bottom: 1px solid @borders-blocks;
+}
+
 .widget.logo {
 	float: left;
 	img {
@@ -517,7 +521,6 @@ input[type="search"]::-webkit-search-decoration {
 
 //  Navigation
 .template-nav {
-	text-align: right;
 	z-index: 1;
 }
 
@@ -526,13 +529,16 @@ input[type="search"]::-webkit-search-decoration {
 		padding: 0;
 		display: inline;
 	}
+	ul li {
+		float: left;
+		width: 50%;
+	}
 	ul li:hover ul {
-		top: 54px;
+		top: 30px;
 		left: 0;
 		background-color: @color-swatch7;
-		border: 1px solid @borders-blocks;
 		li {
-			padding: 8px 20px;
+			padding: 8px 10px;
 		}
 	}
 	ul li a:hover, ul li.folder > .text:hover {
@@ -540,7 +546,7 @@ input[type="search"]::-webkit-search-decoration {
 		border-bottom: 3px solid lighten(@color-swatch7, 10%);
 	}
 	> ul > li {
-		padding: 14px 20px 15px;
+		padding: 4px 10px 5px;
 		a, &.folder > .text {
 			display: inline;
 			padding: 0;
@@ -555,6 +561,14 @@ input[type="search"]::-webkit-search-decoration {
 				top: 46%;
 			}
 		}
+	}
+}
+
+div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
+	float: left;
+	width: 50%;
+	&:before {
+		content:"/ ";
 	}
 }
 
@@ -585,7 +599,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 #tophomecontent {
-	padding: 60px 15% 40px;
+	padding: 60px 0 40px;
 }
 
 #tophomeimage {
@@ -1142,6 +1156,9 @@ input[type="search"]::-webkit-search-decoration {
 	background-image: image('/images/social/socialicons-dropbox.png')
 }
 
+[class*="span-"] {
+	min-height: 1px;
+}
 
 @media (max-width: 960px) {
 	.page-wrap, .template-header, .template-footer {
