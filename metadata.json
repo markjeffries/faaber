@@ -24,7 +24,7 @@
             "color1":"#ffffff",
             "color2":"#002b4f",
             "color3":"#ffffff",
-            "color4":"#777777",
+            "color4":"#002b4f",
             "color5":"#a9a9a9",
             "color6":"#191919",
             "color7":"#ffffff"
@@ -70,9 +70,9 @@
        "title": "Lato",
         "font1": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "34px",
-            "font-weight": "700",
-            "line-height": "44px",
+            "font-size": "42px",
+            "font-weight": "400",
+            "line-height": "52px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },

@@ -1,13 +1,16 @@
 <div class="header-wrap">
 	<header class="template-header container">
 		<div class="row">
-			<div class="header-title span-3">
+			<div class="header-title span-6">
 				{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-				{{widget('companyname', 'companyname', {"business": "Specify"})|raw}}
+				{{widget('companyname', 'companyname', {"business": "FAABER"})|raw}}
 			</div>
-			<nav class="template-nav span-9">
+			<nav class="template-nav span-5">
 				{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
-				{{widget('profile', 'footercolumn1profilesocialicons', { 'profileType' : 'socialicons' })|raw}}
+			</nav>
+			<aside class="template-social span-1">
+				{{widget('profile', 'headerprofilesocialicons', { 'profileType' : 'socialicons' })|raw}}
+			</aside>
 		</div>
 	</header>
 </div>

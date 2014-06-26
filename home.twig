@@ -1,18 +1,27 @@
 {% extends "layout.twig" %}
 {% block content %}
 
-<section class="section main home-page">
-	<div class="row">
-		<aside class="infocontent span-6">
-		</aside>
-		<aside class="infocontent span-6">
-			{{widget('content', 'tophomecontent', {content: '<h1>Giving Clients Sustainable Options</h1><h2>In eget mi facilisis venenatis nulla ut, volutpat eros. Sed iaculis suscipit consectetur. Nam ac nibh enim. Integer varius nisl ut semper</h2>', lines: 'all'})|raw}}
-		</aside>
-	</div>
+<main class="main home-page">
+
+	<section class="container">
+		<div class="row">
+			<aside class="infocontent span-6">
+			</aside>
+			<aside class="infocontent span-6">
+				{{widget('content', 'tophomecontent', {content: '<h1>Giving Clients Sustainable Options</h1><p>In eget mi facilisis venenatis nulla ut, volutpat eros. Sed iaculis suscipit consectetur. Nam ac nibh enim. Integer varius nisl ut semper</p>', lines: 'all'})|raw}}
+			</aside>
+		</div>
+		
+		{{widget('gallery', 'gallery1', {'albumRef':0, 'showDescription': true, 'showTitle': true, 'images':[{'imageHeight':'261', 'imageWidth':'411', 'url':asset('images/image-1.jpg'), 'title':'Image 1', 'description': 'This is image 1'},{'imageHeight':'481', 'imageWidth':'436', 'url':asset('images/image-2.jpg'), 'title':'Image 2', 'description': 'This is image 2'},{'imageHeight':'330', 'imageWidth':'411', 'url':asset('images/image-3.jpg'), 'title':'Image 3', 'description': 'This is image 3'},{'imageHeight':'247', 'imageWidth':'412', 'url':asset('images/image-4.jpg'), 'title':'Image 4', 'description': 'This is image 4'},{'imageHeight':'398', 'imageWidth':'435', 'url':asset('images/image-5.jpg'), 'title':'Image 5', 'description': 'This is image 5'},{'imageHeight':'352', 'imageWidth':'411', 'url':asset('images/image-6.jpg'), 'title':'Image 6', 'description': 'This is image 6'},{'imageHeight':'262', 'imageWidth':'411', 'url':asset('images/image-7.jpg'), 'title':'Image 7', 'description': 'This is image 7'},{'imageHeight':'250', 'imageWidth':'410', 'url':asset('images/image-8.jpg'), 'title':'Image 8', 'description': 'This is image 8'}]})|raw}}
+	</section>
 	
-	{{widget('gallery', 'gallery1', {'albumRef':0, 'showDescription': true, 'showTitle': true, 'images':[{'imageHeight':'261', 'imageWidth':'411', 'url':asset('images/image-1.jpg'), 'title':'Image 1', 'description': 'This is image 1'},{'imageHeight':'481', 'imageWidth':'436', 'url':asset('images/image-2.jpg'), 'title':'Image 2', 'description': 'This is image 2'},{'imageHeight':'330', 'imageWidth':'411', 'url':asset('images/image-3.jpg'), 'title':'Image 3', 'description': 'This is image 3'},{'imageHeight':'247', 'imageWidth':'412', 'url':asset('images/image-4.jpg'), 'title':'Image 4', 'description': 'This is image 4'},{'imageHeight':'398', 'imageWidth':'435', 'url':asset('images/image-5.jpg'), 'title':'Image 5', 'description': 'This is image 5'},{'imageHeight':'352', 'imageWidth':'411', 'url':asset('images/image-6.jpg'), 'title':'Image 6', 'description': 'This is image 6'},{'imageHeight':'262', 'imageWidth':'411', 'url':asset('images/image-7.jpg'), 'title':'Image 7', 'description': 'This is image 7'},{'imageHeight':'250', 'imageWidth':'410', 'url':asset('images/image-8.jpg'), 'title':'Image 8', 'description': 'This is image 8'}]})|raw}}
 	
-	{{zone('main')|raw}}
-</section>
+	<section class="main-wrap">
+		<div class="container">
+			{{zone('main')|raw}}
+		</div>
+	</section>
+	
+</main>
 
 {% endblock %}
