@@ -65,7 +65,7 @@
 @borders-blocks: darken(@color-swatch1, 10%);
 @borders-buttons: lighten(desaturate(@color-swatch2, 40%), 40%);
 @borders-buttons-hover: lighten(desaturate(@color-swatch2, 40%), 30%);
-@background-blocks: lighten(@color-swatch2, 75%);
+@background-blocks: lighten(@color-swatch2, 80%);
 @text-links-hover: darken(@color-swatch6, 20%);
 
 // 1. Globals
@@ -276,11 +276,12 @@ button.btn,
 	line-height:@font-swatch7-line-height;
 	letter-spacing: @font-swatch7-letter-spacing;
 	font-size: @font-swatch7-font-size;
-	padding: 6px 14px 8px;
+	padding: 7px 19px 8px;
 	-webkit-transition: .2s;
 	-moz-transition: .2s;
 	-ms-transition: .2s;
 	transition: .2s;
+	border-radius: 20px;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 		border: 1px solid darken(@font-swatch7-background-color, 40%);
@@ -291,8 +292,10 @@ button.btn,
 .widget.profile .bk-profile-socialicons span a,
 .widget.socialicons span a {
 	padding: 0;
+	background-color: transparent;
 	border: none;
 	&:hover {
+		background-color: transparent;
 		border: none;
 	}
 }
@@ -347,7 +350,7 @@ textarea,
 .contactform textarea,
 .widget.profile form fieldset input {
 	text-indent: 0;
-	padding: 8px 9px 10px;
+	padding: 8px 14px 10px;
 	border: 1px solid @borders-blocks;
 	outline: none;
 	-webkit-transition: border .2s;
@@ -355,6 +358,7 @@ textarea,
 	-ms-transition: border .2s;
 	transition: border .2s;
 	background-color: @color-swatch1;
+	border-radius: 20px;
 	&:hover, &:focus {
 		border: 1px solid darken(@borders-blocks, 20%);
 		background-color: @color-swatch1;
@@ -395,6 +399,9 @@ input[type=search],
 textarea {
 	resize: vertical;
 }
+textarea.message {
+	border-radius: 20px 20px 0 20px;
+}
 
 
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
@@ -410,7 +417,6 @@ select {
 	background-position-y: 53%;
 	margin-bottom: 12px;
 	padding-right: 33px;
-	border-radius: 0;
 }
 
 .svg {
@@ -641,7 +647,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 		&:before {
 			content: "";
 			display: block;
-			border: 5px solid transparent;
+			border: 7px solid transparent;
 			position: absolute;
 			top: 10px;
 			left: 11px;
@@ -656,12 +662,6 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	.btn-prev:before {
 		border-right-color: @color-swatch2;
 		left: 6px;
-	}
-	.btn-prev {
-		left: -4px;
-	}
-	.btn-next {
-		right: -4px;
 	}
 }
 
@@ -690,8 +690,6 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	}
 	.content-wrapper {
 		text-shadow: none;
-		padding-left: 16px;
-		padding-bottom: 28px;
 		.title {
 			font-weight: @font-swatch3-font-weight;
 			&:after {
@@ -763,16 +761,6 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 			top: 31%;
 		}
 	}
-}
-
-.slideshow-image-list:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	border: 20px solid transparent;
-	box-sizing: border-box;
-	box-shadow: inset 0 0 1px 1px fadeout(@color-swatch1, 75%);
 }
 
 // Menu
@@ -881,6 +869,10 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
 	font-family: inherit;
+}
+
+.checkout-quantitybtn {
+	border-radius: 20px;
 }
 
 .template-header .widget.ecombasket {

@@ -1,14 +1,15 @@
 <div class="header-wrap">
 	<header class="template-header container">
 		<div class="row">
-			<div class="header-title span-6">
-				{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-				{{widget('companyname', 'companyname', {"business": "FAABER"})|raw}}
+			<div class="header-title span-5">
+				{{widget('logo', 'headerlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+				{{widget('companyname', 'headercompanyname', {"business": "FAABER"})|raw}}
 			</div>
-			<nav class="template-nav span-5">
-				{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+			<nav class="template-nav span-4">
+				{{widget('extendednavigation', 'headernavigationheader', {"align":"left"})|raw}}
 			</nav>
-			<aside class="template-social span-1">
+			<aside class="template-social span-3">
+				{{widget('content', 'headercontent', {"content":"<p>Contact The Team</p>"})|raw}}
 				{{widget('profile', 'headerprofilesocialicons', { 'profileType' : 'socialicons' })|raw}}
 			</aside>
 		</div>

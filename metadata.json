@@ -25,7 +25,7 @@
             "color2":"#002b4f",
             "color3":"#ffffff",
             "color4":"#002b4f",
-            "color5":"#a9a9a9",
+            "color5":"#6f6f6f",
             "color6":"#191919",
             "color7":"#ffffff"
         },
@@ -102,7 +102,7 @@
         },
         "font5": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "15px",
+            "font-size": "14px",
             "font-weight": "400",
             "line-height": "25px",
             "color": "@color-swatch5",
@@ -121,7 +121,7 @@
          },
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "15px",
+            "font-size": "14px",
             "font-weight": "400",
             "line-height": "25px",
             "color": "@color-swatch6",
