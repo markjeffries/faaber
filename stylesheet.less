@@ -222,6 +222,7 @@ blockquote {
 	line-height: bkscale(@font-swatch5-line-height, 1.2);
 	border: 1px solid @borders-blocks;
 	color: @color-swatch5;
+	border-radius: 30px;
 	&:before {
 		left: 8px;
 		color: @color-swatch5;
@@ -289,15 +290,19 @@ button.btn,
 }
 
 .template-footer .widget.profile .bk-profile-socialicons span a,
-.widget.profile .bk-profile-socialicons span a,
-.widget.socialicons span a {
-	padding: 0;
+.main .widget.profile .bk-profile-socialicons span a,
+.main .widget.socialicons span a {
 	background-color: transparent;
 	border: none;
 	&:hover {
 		background-color: transparent;
 		border: none;
 	}
+}
+
+.widget.profile .bk-profile-socialicons span a {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .widget.profile .bk-profile-socialicons {
@@ -535,6 +540,9 @@ input[type="search"]::-webkit-search-decoration {
 //  Navigation
 .template-nav {
 	z-index: 1;
+	div {
+		min-height: 40px;
+	}
 }
 
 .widget .extendednavigation {
@@ -629,9 +637,8 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 .main .widget {
 	margin-bottom: 15px;
 }
-
-.main-wrap {
-	background-color: darken(@color-swatch1, 6%);
+.main {
+	background-color: darken(@color-swatch1, 1.5%);
 	border-bottom: 1px solid @borders-blocks;
 }
 
@@ -1165,7 +1172,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 }
 
 @media (max-width: 960px) {
-	.page-wrap, .template-header, .template-footer {
+	.page-wrap .main, .template-header, .template-footer {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -1176,14 +1183,24 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	.header-logo {
 		padding-top: 10px;
 	}
+	.template-social {
+		margin-top: 20px;
+	}
 	.widget .extendednavigation a.pull {
-		right: 10px;
-		top: -32px;
+		right: 0;
+		top: 13px;
 		&:after {
 			right: 7px;
 			background-color: @color-swatch2;
 			box-shadow: 0 6px 0 @color-swatch2, 0 12px 0 @color-swatch2;
 		}
+	}
+	.widget .extendednavigation ul li:hover ul li {
+		padding: 6px 20px 6px 0;
+	}
+	.widget .extendednavigation > ul > li:hover ul,
+	.widget .extendednavigation > ul > li.folder:hover ul {
+		top: 32px;
 	}
 	.header-details, .header-phone {
 		text-align: center;
@@ -1265,6 +1282,14 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 		select, label {
 			width: 100%;
 		}
+	}
+	.widget .extendednavigation > ul > li:hover ul,
+	.widget .extendednavigation > ul > li.folder:hover ul {
+		top: 32px;
+	}
+	.widget .extendednavigation > ul > li,
+	.widget .extendednavigation > ul > li.folder {
+		padding-left: 0;
 	}
 	.widget.clicktocall a {
 		border: 1px solid darken(@font-swatch7-background-color, 20%);
