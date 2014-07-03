@@ -561,6 +561,7 @@ input[type="search"]::-webkit-search-decoration {
 		top: 32px;
 		left: 0;
 		background-color: @color-swatch7;
+		border-bottom: 1px solid darken(@color-swatch1, 5%);
 		li {
 			padding: 6px 10px;
 		}
@@ -637,7 +638,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 .main .widget {
 	margin-bottom: 15px;
 }
-.main {
+.page-wrap > .main {
 	background-color: darken(@color-swatch1, 1.5%);
 	border-bottom: 1px solid @borders-blocks;
 }
@@ -697,6 +698,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	}
 	.content-wrapper {
 		text-shadow: none;
+		bottom: 14px;
 		.title {
 			font-weight: @font-swatch3-font-weight;
 			&:after {
@@ -878,8 +880,9 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	font-family: inherit;
 }
 
-.checkout-quantitybtn {
+.widget.ecomcheckout table tr td .checkout-quantitybtn {
 	border-radius: 20px;
+	background-color: @color-swatch1;
 }
 
 .template-header .widget.ecombasket {
@@ -897,7 +900,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	background-position: 1px 8px;
 	height: 35px;
 	width: 32px;
-	top: 6px;
+	top: 0px;
 	position: absolute;
 	right: 0;
 }
@@ -918,7 +921,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	height: 21px;
 	width: 19px;
 	margin: 0 14px 0 0;
-	top: -1px;
+	top: -3px;
 	left: -1px;
 }
 .svg {
@@ -942,7 +945,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 		p {
 			display: inline-block;
 			color: @color-swatch4;
-			padding: 14px 50px 15px 20px;
+			padding: 7px 50px 8px 20px;
 		}
 		.basket-count {
 			color: @color-swatch4;
@@ -950,6 +953,10 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
  	}
 	.ecombasket-list-container ul li {
 		border-bottom: 1px solid @borders-blocks;
+	}
+	.ecombasket-list-container {
+		border-radius: 20px;
+		top: 105%;
 	}
 }
 
