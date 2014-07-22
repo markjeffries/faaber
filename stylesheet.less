@@ -283,6 +283,7 @@ button.btn,
 	-ms-transition: .2s;
 	transition: .2s;
 	border-radius: 20px;
+	outline: none;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 		border: 1px solid darken(@font-swatch7-background-color, 40%);
@@ -355,7 +356,7 @@ textarea,
 .contactform textarea,
 .widget.profile form fieldset input {
 	text-indent: 0;
-	padding: 8px 14px 10px;
+	padding: 7px 14px 8px;
 	border: 1px solid @borders-blocks;
 	outline: none;
 	-webkit-transition: border .2s;
@@ -446,6 +447,42 @@ input[type="search"]::-webkit-search-decoration {
 
 .widget.tweet {
 	padding: 0;
+}
+
+// Full width single field forms
+.blog-search-form .form-group,
+.widget.signupform .form-group,
+.widget.profile form fieldset {
+	position: relative;
+}
+
+.blog-search-input,
+.signupform fieldset input[type=email],
+.widget.profile form fieldset input, input[type=email] {
+	width: 100%;
+	padding-right: 100px;
+}
+
+.blog-search-submit-button,
+.signupform fieldset button,
+.widget.profile form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 41px;
+	margin: 0;
+}
+
+.signupform fieldset label {
+	margin-bottom: 0;
+}
+
+.blog-search-form {
+	label {
+		text-indent: -100%;
+		display: block;
+		height: 0;
+	}
 }
 
 // Header
