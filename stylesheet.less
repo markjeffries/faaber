@@ -207,7 +207,8 @@ p,
 .twitter ul li time,
 .signupform label,
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
-select {
+select,
+.form-group.productlist-search:before {
 	font-family:@font-swatch5-font-family;
 	font-weight: @font-swatch5-font-weight;
 	color:@font-swatch5-color;
@@ -528,7 +529,6 @@ input[type="search"]::-webkit-search-decoration {
 
 .form-group.productlist-search:before {
 	content: "Search";
-	&:extend(label);
 }
 
 // Header
