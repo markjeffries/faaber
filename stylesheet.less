@@ -862,15 +862,11 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 }
 
 // Menu
-.menu .menu-item-image-wrap,
-.blog-post-feature-image-wrap {
+.menu .menu-item-image-wrap img {
+	display: none;
 	height: 200px;
 	background-size: cover;
 	background-position: center;
-}
-
-.menu .menu-item-image-wrap img {
-	display: none;
 }
 
 .menu .menu-subsection {
@@ -910,12 +906,15 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 }
 
 // Blog
-.blog-post-feature-image-wrap {
+.blog-post-feature-image-wrap,
+.widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
 	height: 400px;
 	margin-bottom: 10px;
 	text-align: center;
 	line-height: 400px;
 	overflow: hidden;
+	background-size: cover;
+	background-position: center;
 	img {
 		vertical-align: middle;
 		max-height: 100%;
