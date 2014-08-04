@@ -702,6 +702,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	float: left;
 	width: 50%;
 	&:before {
+		font-size: @font-swatch6-font-size;
 		content:"/ ";
 	}
 }
@@ -1445,5 +1446,13 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 			border: 1px solid darken(@font-swatch7-background-color, 40%);
 			padding: 6px 14px 8px 40px;
 		}
+	}
+	.header-wrap,
+	.page-wrap,
+	.footer-wrap {
+		padding: 0;
+	}
+	.footer-wrap {
+		text-align: center;
 	}
 }
