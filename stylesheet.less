@@ -867,9 +867,10 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	height: 200px;
 	background-size: cover;
 	background-position: center;
-	img {
-		display: none;
-	}
+}
+
+.menu .menu-item-image-wrap img {
+	display: none;
 }
 
 .menu .menu-subsection {
@@ -912,6 +913,14 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 .blog-post-feature-image-wrap {
 	height: 400px;
 	margin-bottom: 10px;
+	text-align: center;
+	line-height: 400px;
+	overflow: hidden;
+	img {
+		vertical-align: middle;
+		max-height: 100%;
+		box-shadow: 0 0 0 1000px fadeout(@color-swatch1, 20%);
+	}
 }
 
 .blog-post-metadata {
