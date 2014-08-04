@@ -325,8 +325,21 @@ button.btn:disabled:hover,
 	}
 }
 
-.clicktocall a {
+.clicktocall a,
+.ecombasket-checkout-link,
+.widget.ecomproduct .ecom-product .btn {
 	display: inline-block;
+}
+
+.widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap {
+	margin: 10px 0 0;
+}
+
+.widget.ecomproduct .ecom-product .btn,
+.ecombasket-checkout-link {
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .checkout-empty-link {
