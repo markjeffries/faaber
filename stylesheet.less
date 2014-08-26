@@ -409,13 +409,6 @@ select::-ms-expand {
 	display: inline;
 }
 
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
-select {
-	-moz-appearance: none;
-	text-indent: 0.01px;
-	text-overflow: '';
-}
-
 .widget.profile form fieldset input,
 input[type=email],
 input[type=text],
@@ -448,21 +441,14 @@ textarea.message {
 .widget.ecomcheckout .delivery select,
 select {
 	cursor: pointer;
-	-webkit-appearance: none;
 	position: relative;
-	background-image: image('/images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: right 12px center;
 	background-position-x: 95%;
 	background-position-y: 53%;
 	margin-bottom: 12px;
 	padding-right: 33px;
-}
-
-.svg {
-	.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, select {
-		background-image: image('/images/arrow-down.svg');
-	}
+	height: 42px;
 }
 
 input[type="search"]::-webkit-search-decoration {
