@@ -703,7 +703,7 @@ input[type="search"]::-webkit-search-decoration {
 .widget .extendednavigation {
 	ul li .text, ul li.folder .text {
 		padding: 0;
-		display: inline;
+		display: inline-block;
 	}
 	ul {
 		width: 100%;
@@ -717,21 +717,11 @@ input[type="search"]::-webkit-search-decoration {
 		left: 0;
 		background-color: @color-swatch7;
 		border-bottom: 1px solid darken(@color-swatch1, 5%);
-		li {
-			padding: 6px 10px;
-		}
-	}
-	ul li a:hover, ul li.folder > .text:hover {
-		padding-bottom: 4px;
-		border-bottom: 3px solid lighten(@color-swatch7, 10%);
 	}
 	> ul > li {
-		padding: 4px 10px 5px;
 		line-height: 25px;
 		a, &.folder > .text {
-			display: inline;
-			padding: 0;
-			border-bottom: 3px solid @color-swatch7;
+			padding: 4px 20px 5px;
 			transition: .2s;
 		}
 		&.folder {
@@ -748,9 +738,14 @@ input[type="search"]::-webkit-search-decoration {
 div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	float: left;
 	width: 50%;
+	position: relative;
 	&:before {
 		font-size: @font-swatch6-font-size;
 		content:"/ ";
+		left: 9px;
+		top: 51%;
+		margin-top: -@font-swatch6-font-size;
+		position: absolute;
 	}
 }
 
@@ -1339,6 +1334,11 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	.page-wrap .main, .template-header, .template-footer {
 		padding: 0 20px;
 	}
+	.template-social {
+		clear: both;
+		width: 100%;
+		padding-bottom: 20px;
+	}
 }
 
 // Tablet
@@ -1359,7 +1359,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 		}
 	}
 	.widget .extendednavigation ul li:hover ul li {
-		padding: 6px 20px 6px 0;
+		padding: 0;
 	}
 	.widget .extendednavigation > ul > li:hover ul,
 	.widget .extendednavigation > ul > li.folder:hover ul {
@@ -1385,14 +1385,14 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	}
 	.widget .extendednavigation {
 		> ul > li, > ul > li.folder {
-			padding: 4px 20px;
+			padding: 0;
 			border-bottom: none;
 			&.folder:after {
 				right: 5px;
 				top: 47%;
 			}
 			&:hover ul {
-				top: 30px;
+				top: 32px;
 				left: 0;
 				margin: 0;
 			}
