@@ -21,7 +21,7 @@
 
 /*	===============================
 	Colour Swatches
-	===============================	
+	===============================
 	"color1": == Background
 	"color2": == Contrast colour
 	"color3": == Button colour
@@ -33,7 +33,7 @@
 
 /*	===============================
 	Font Swatches
-	===============================	
+	===============================
 	"font1":  == Heading 1
 	"font2":  == Heading 2
 	"font3":  == Heading 3
@@ -77,73 +77,73 @@ html, body {
 	line-height:@font-swatch5-line-height;
 	letter-spacing: @font-swatch5-letter-spacing;
 	font-size: @font-swatch5-font-size;
-	
+
 	-webkit-font-smoothing: auto;
 }
 
 h1 {
-	font-family:@font-swatch1-font-family; 
-	font-weight: @font-swatch1-font-weight; 
-	color:@font-swatch1-color; 
-	line-height:@font-swatch1-line-height; 
-	letter-spacing: @font-swatch1-letter-spacing; 
+	font-family:@font-swatch1-font-family;
+	font-weight: @font-swatch1-font-weight;
+	color:@font-swatch1-color;
+	line-height:@font-swatch1-line-height;
+	letter-spacing: @font-swatch1-letter-spacing;
 	font-size: @font-swatch1-font-size;
 	a {
-		font-family:@font-swatch1-font-family; 
-		font-weight: @font-swatch1-font-weight; 
-		line-height:@font-swatch1-line-height; 
-		letter-spacing: @font-swatch1-letter-spacing; 
+		font-family:@font-swatch1-font-family;
+		font-weight: @font-swatch1-font-weight;
+		line-height:@font-swatch1-line-height;
+		letter-spacing: @font-swatch1-letter-spacing;
 		font-size: @font-swatch1-font-size;
 		color: @color-swatch2;
 	}
 }
 
 h2, .blog-post-title {
-	font-family:@font-swatch2-font-family; 
-	font-weight: @font-swatch2-font-weight; 
-	color:@font-swatch2-color; 
-	line-height:@font-swatch2-line-height; 
-	letter-spacing: @font-swatch2-letter-spacing; 
+	font-family:@font-swatch2-font-family;
+	font-weight: @font-swatch2-font-weight;
+	color:@font-swatch2-color;
+	line-height:@font-swatch2-line-height;
+	letter-spacing: @font-swatch2-letter-spacing;
 	font-size: @font-swatch2-font-size;
 	a {
-		font-family:@font-swatch2-font-family; 
-		font-weight: @font-swatch2-font-weight; 
-		line-height:@font-swatch2-line-height; 
-		letter-spacing: @font-swatch2-letter-spacing; 
+		font-family:@font-swatch2-font-family;
+		font-weight: @font-swatch2-font-weight;
+		line-height:@font-swatch2-line-height;
+		letter-spacing: @font-swatch2-letter-spacing;
 		font-size: @font-swatch2-font-size;
 		color: @color-swatch2;
 	}
 }
 
 h3 {
-	font-family:@font-swatch3-font-family; 
-	font-weight: @font-swatch3-font-weight; 
-	color:@font-swatch3-color; 
-	line-height:@font-swatch3-line-height; 
-	letter-spacing: @font-swatch3-letter-spacing; 
+	font-family:@font-swatch3-font-family;
+	font-weight: @font-swatch3-font-weight;
+	color:@font-swatch3-color;
+	line-height:@font-swatch3-line-height;
+	letter-spacing: @font-swatch3-letter-spacing;
 	font-size: @font-swatch3-font-size;
 	a {
-		font-family:@font-swatch3-font-family; 
-		font-weight: @font-swatch3-font-weight; 
-		line-height:@font-swatch3-line-height; 
-		letter-spacing: @font-swatch3-letter-spacing; 
+		font-family:@font-swatch3-font-family;
+		font-weight: @font-swatch3-font-weight;
+		line-height:@font-swatch3-line-height;
+		letter-spacing: @font-swatch3-letter-spacing;
 		font-size: @font-swatch3-font-size;
 		color: @color-swatch2;
 	}
 }
 
 h4 {
-	font-family:@font-swatch4-font-family; 
-	font-weight: @font-swatch4-font-weight; 
-	color:@font-swatch4-color; 
-	line-height:@font-swatch4-line-height; 
-	letter-spacing: @font-swatch4-letter-spacing; 
+	font-family:@font-swatch4-font-family;
+	font-weight: @font-swatch4-font-weight;
+	color:@font-swatch4-color;
+	line-height:@font-swatch4-line-height;
+	letter-spacing: @font-swatch4-letter-spacing;
 	font-size: @font-swatch4-font-size;
 	a {
-		font-family:@font-swatch4-font-family; 
-		font-weight: @font-swatch4-font-weight; 
-		line-height:@font-swatch4-line-height; 
-		letter-spacing: @font-swatch4-letter-spacing; 
+		font-family:@font-swatch4-font-family;
+		font-weight: @font-swatch4-font-weight;
+		line-height:@font-swatch4-line-height;
+		letter-spacing: @font-swatch4-letter-spacing;
 		font-size: @font-swatch4-font-size;
 		color: @color-swatch2;
 	}
@@ -267,7 +267,8 @@ button.btn,
 .widget.ecomcheckout .checkout-order-button,
 .widget.ecombasket .ecombasket-pull,
 .ecombasket-remove-button,
-.basket-summary-empty-cta {
+.basket-summary-empty-cta,
+.widget.content .expand {
 	cursor: pointer;
 	background-color: @font-swatch7-background-color;
 	border: 1px solid darken(@font-swatch7-background-color, 20%);
@@ -362,6 +363,15 @@ button.btn:disabled:hover,
 	margin-top: 10px;
 	display: inline-block;
 }
+
+
+.expand {
+	background-color: @color-swatch3;
+	.more, .less {
+		color: @font-swatch7-color;
+	}
+}
+
 
 // Forms
 fieldset .btn,
@@ -1161,7 +1171,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 			border: 1px solid @borders-blocks;
 			padding: 14px 20px;
 			color: @color-swatch6;
-			line-height: inherit; 
+			line-height: inherit;
 			font-size: inherit;
 			-webkit-transition: .2s;
 			-moz-transition: .2s;
@@ -1286,7 +1296,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 .svg .widget.dropbox button {
 	background-image: image('/images/social/socialicons-dropbox.svg')
 }
-	
+
 /* PNG Icons */
 .widget.socialicons span.bk-socialicons-twitter a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
@@ -1373,7 +1383,7 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	}
 	.header-details, .header-phone {
 		text-align: center;
-		
+
 	}
 	.widget.companyname {
 		padding-right: 60px;
