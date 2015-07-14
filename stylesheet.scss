@@ -46,17 +46,17 @@
 	"font10": == Logo
 	=============================== */
 
-@import "#{$templateLocal}/swatches.scss";
+@import "swatches.scss";
 
 /*	===============================
 	Bootstrap import
 	=============================== */
-@import "#{$templateLocal}/basekit-bootstrap.scss";
+@import "basekit-bootstrap.scss";
 
 /*	===============================
 	Flynn (grid) import
 	=============================== */
-@import "#{$templateLocal}/grid.scss";
+@import "grid.scss";
 
 /*	===============================
 	Template Styles
