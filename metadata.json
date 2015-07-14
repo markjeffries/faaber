@@ -1,5 +1,6 @@
 {
 	"name":"Faaber",
+	"preprocessor": "sass",
 	"thumbnail":"thumbnail.png",
 	"screenshot":"thumbnail.png",
 	"images":[
