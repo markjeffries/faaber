@@ -212,8 +212,8 @@ select {
 
 blockquote {
 	font-style: italic;
-	font-size: $font-swatch5-font-size * 1.2;
-	line-height: $font-swatch5-line-height * 1.2;
+	font-size: bkscale($font-swatch5-font-size, 1.2);
+	line-height: bkscale($font-swatch5-line-height, 1.2);
 	border: 1px solid $borders-blocks;
 	color: $color-swatch5;
 	border-radius: 30px;
@@ -1147,8 +1147,8 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 	padding-top: 20px;
 	h2 {
 		display: inline-block;
-		line-height: $font-swatch3-line-height * 0.9;
-		font-size: $font-swatch3-font-size * 0.9;
+		line-height:bkscale($font-swatch3-line-height, 0.9);
+		font-size: bkscale($font-swatch3-font-size, 0.9);
 		max-width: 70%;
 		a {
 			display: inline-block;
@@ -1176,9 +1176,9 @@ div.widget .extendednavigation ul li, div.widget.extendednavigation ul li {
 
 .ecomfeaturedproducts {
 	h2 {
-		line-height: $font-swatch2-line-height * 0.7;
-		letter-spacing: $font-swatch2-letter-spacing * 0.7;
-		font-size: $font-swatch2-font-size * 0.7;
+		line-height: bkscale($font-swatch2-line-height, 0.7);
+		letter-spacing: bkscale($font-swatch2-letter-spacing, 0.7);
+		font-size: bkscale($font-swatch2-font-size, 0.7);
 	}
 }
 
