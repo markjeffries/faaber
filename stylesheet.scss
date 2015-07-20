@@ -1,3 +1,10 @@
+@function bkscale($value, $multiplier) {
+    @if type-of($value) != number {
+        @return $value;
+    }
+    @return $value * $multiplier;
+}
+
 /*	===============================
 	Table of Contents
 	===============================
